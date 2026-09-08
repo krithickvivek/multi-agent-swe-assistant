@@ -1,0 +1,46 @@
+# ---- Secrets: never commit a real key (hard constraint 6) ----
+.env
+.env.*
+!.env.example
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# ---- Test / lint caches ----
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ---- Local data stores (regenerable; must not be shared between laptops) ----
+*.db
+*.sqlite
+*.sqlite3
+.cache/
+data/chroma/
+runs/
+
+# ---- Generated project artifacts produced by the pipeline ----
+artifacts/
+workspace/
+
+# ---- Frontend ----
+node_modules/
+frontend/dist/
+frontend/build/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
